@@ -1,0 +1,218 @@
+/* HEADER, MENU STYLE */
+header {
+  background: white;
+  text-align: center;
+  position: fixed;
+  z-index: 5;
+  width: 100%;
+}
+header a {
+  text-decoration: none;
+  outline: none;
+  display: block;
+  transition: .3s ease-in-out;
+}
+nav {
+  display: table;
+  margin: 0 auto;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.topmenu:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.topmenu > li {
+  width: 25%;
+  float: left;
+  position: relative;
+  font-family: 'Open Sans', sans-serif;
+}
+.topmenu > li > a {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  color: #404040;
+  padding: 15px 30px;
+}
+.topmenu li a:hover { color: #D5B45B; 
+}
+.submenu-link:after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom:  10px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 0; 
+  height: 0; 
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid rgba( 205, 143, 53, 1 );
+}
+.submenu {
+  background: #273037;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  z-index: 5;
+  width: 180px;
+  opacity: 0;
+  transform: scaleY(0);
+  transform-origin: 0 0;
+  transition: .5s ease-in-out;
+}
+.submenu a {
+  color: white;
+  text-align: left;
+  padding: 12px 15px;
+  font-size: 13px;
+  border-bottom: 1px solid rgba(255,255,255,.1);
+}
+.submenu li:last-child a { border-bottom: none; }
+.topmenu > li:hover .submenu {
+  opacity: 1;
+  transform: scaleY(1);
+}
+
+
+
+/* BODY STYLE */
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  background: rgba( 205, 143, 53, 0.392 );
+	
+  
+}
+.SP-logo {
+  position:relative;
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(https://b.radikal.ru/b12/2005/a1/3dce1b97dfe2.png);
+  min-height: 50%;
+  background-size: 100%;
+}
+
+
+
+/* SMOOTH SCROLL, COMPASS */
+.compass {
+  background-image: url(https://cdn.pixabay.com/photo/2020/05/06/12/01/compass-5137269_1280.jpg);
+  position: relative;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+min-height: 70%;
+background-attachment: fixed;
+}
+
+
+
+/* SMOOTH SCROLL, BLUR */
+.blur {
+background-image: url(https://images.pexels.com/photos/949587/pexels-photo-949587.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  position: relative;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+min-height: 70%;
+background-attachment: fixed;
+}
+
+
+
+/* TEXT AREA, WELCOME STYLE */
+#welcome {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  text-align: center
+}
+.textSection {
+    text-align: justify;
+}
+
+
+
+
+/* EXPLORE STYLE */
+#explore {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: rgba( 25, 25, 25, 1 );
+  text-align: center
+}
+.exploreSection {
+    text-align: justify;
+}
+.text {
+  margin: 2%;
+  text-indent: 35px;
+}
+
+
+
+
+/* IMAGES STYLE */
+.images3 {
+	
+	width: auto;
+	text-align: center;
+    padding: 100px;
+}
+.img1 {
+	border: 1px solid #f2f2f2;
+	margin: 16px;
+}
+.img2 {
+	border: 1px solid #f2f2f2;
+	margin: 16px;
+}
+.img3 {
+	border: 1px solid #f2f2f2;
+	margin: 16px;
+	
+}
+.img11 {
+	float:left; 
+	margin:10px;
+	color: #f2f2f2;
+}
+.img22 {
+	float:left; 
+	margin:10px;
+}
+.img33 {
+	float:left; 
+	margin:10px;
+}
+
+
+
+
+/* CONTACT STYLE */
+#contact {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: rgba( 25, 25, 25, 1 );
+  text-align: center
+}
+.contactText {
+  font: "Lato", sans-serif;
+  color: rgba( 25, 25, 25, 1 );
+  text-align: center
+}
+.contactSection {
+    
+}
