@@ -27,7 +27,7 @@ nav ul {
   clear: both;
 }
 .topmenu > li {
-  width: 25%;
+  width: 20%;
   float: left;
   position: relative;
   font-family: 'Open Sans', sans-serif;
@@ -87,7 +87,7 @@ nav ul {
 body, html {
   height: 100%;
   margin: 0;
-  font: 400 15px/1.8 "Lato", sans-serif;
+  font: 400 20px/1.8 "Lato", sans-serif;
   background: rgba( 205, 143, 53, 0.392 );
 	
   
