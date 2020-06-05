@@ -1,0 +1,140 @@
+/* HEADER, MENU STYLE */
+header {
+  background: white;
+  text-align: center;
+  position: fixed;
+  z-index: 5;
+  width: 100%;
+}
+header a {
+  text-decoration: none;
+  outline: none;
+  display: block;
+  transition: .3s ease-in-out;
+}
+nav {
+  display: table;
+  margin: 0 auto;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.topmenu:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.topmenu > li {
+  width: 20%;
+  float: left;
+  position: relative;
+  font-family: 'Open Sans', sans-serif;
+}
+.topmenu > li > a {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  color: #404040;
+  padding: 15px 30px;
+}
+.topmenu li a:hover { color: #D5B45B; 
+}
+.submenu-link:after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom:  10px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 0; 
+  height: 0; 
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid rgba( 205, 143, 53, 1 );
+}
+.submenu {
+  background: #273037;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  z-index: 5;
+  width: 180px;
+  opacity: 0;
+  transform: scaleY(0);
+  transform-origin: 0 0;
+  transition: .5s ease-in-out;
+}
+.submenu a {
+  color: white;
+  text-align: left;
+  padding: 12px 15px;
+  font-size: 13px;
+  border-bottom: 1px solid rgba(255,255,255,.1);
+}
+.submenu li:last-child a { border-bottom: none; }
+.topmenu > li:hover .submenu {
+  opacity: 1;
+  transform: scaleY(1);
+}
+
+
+
+/* BODY STYLE */
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 20px/1.8 "Lato", sans-serif;
+  background: rgba( 205, 143, 53, 0.392 );
+}
+	
+
+
+/* CAREERS STYLE */
+#join {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: rgba( 25, 25, 25, 1 );
+  text-align: center
+}
+.joinSection {
+    text-align: justify;
+}
+#em {
+	text-align: center;
+	background-color: rgba( 99, 150, 139, 0.7 );;
+	}
+.textCareers {
+  margin: 2%;
+  text-indent: 35px;
+}
+
+
+/* SMOOTH SCROLL, MAP */
+.map {
+  background-image: url(https://images.unsplash.com/photo-1502920514313-52581002a659?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2094&q=80);
+  position: relative;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+min-height: 43%;
+background-attachment: fixed;
+}
+
+/* VACANCIES STYLE */
+
+.vacancies {
+	margin: 2%;
+	text-indent: 35px;
+	text-align: center;
+	
+}
+
+ul, li {
+	text-align: center;
+	list-style-type: none;
+}
